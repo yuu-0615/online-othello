@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オンラインオセロ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 オンラインオセロ</h1>
+        
+        <div class="game-info">
+            <div class="player-info">
+                <p>プレイヤー1（黒）: <span id="player1Score">2</span></p>
+            </div>
+            <div class="player-info">
+                <p>プレイヤー2（白）: <span id="player2Score">2</span></p>
+            </div>
+            <div class="turn-info">
+                <p>ターン: <span id="currentTurn">黒</span></p>
+            </div>
+        </div>
+
+        <div class="board-container">
+            <div class="board" id="board"></div>
+        </div>
+
+        <div class="controls">
+            <button id="resetBtn">ゲームをリセット</button>
+            <button id="passBtn">パス</button>
+        </div>
+
+        <div class="message" id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
